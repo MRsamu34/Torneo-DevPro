@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "YtHkOEuFxVSrTDAOfbkUuZAfRSLMIOC+i46wZ7L+Yib5cMUKxoJUCqrGKGbQSgRZwKBE2aH9jqYE5bjicV3CTg==",
+  "success": true,
+  "projectFilePath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mayda\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Mayda\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Mayda\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Mayda\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Mayda\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Mayda\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

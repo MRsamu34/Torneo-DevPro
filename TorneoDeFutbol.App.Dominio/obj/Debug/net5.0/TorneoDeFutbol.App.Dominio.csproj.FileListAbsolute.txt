@@ -1,0 +1,12 @@
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.csproj.AssemblyReference.cache
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.AssemblyInfoInputs.cache
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.AssemblyInfo.cs
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.deps.json
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
+C:\Proyectos\Reto__ciclo_3\TorneoDeFutbol.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb
