@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 namespace TorneoDeFutbol.App.Dominio
 {
     /// <summary>Class <c>Equipo</c>
@@ -15,6 +16,6 @@ namespace TorneoDeFutbol.App.Dominio
 
         public Municipio Municipio_id {get; set;} 
 
-        public Jugador Jugador_id {get; set;} 
+        public List<Jugador> Jugadores {get; set;}
     }
 }

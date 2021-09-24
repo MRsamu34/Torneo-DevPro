@@ -43,7 +43,7 @@ namespace TorneoDeFutbol.App.Consola
 
         //---------------- EQUIPO ----------- Agrega a la base de datos....
 
-          private static void AddEquipo()
+       /*   private static void AddEquipo()
         {
             var equipo = new Equipo
             {
@@ -51,7 +51,6 @@ namespace TorneoDeFutbol.App.Consola
               //  DirectorTecnico = new
                };
             _repoEquipo.AddEquipo(equipo);
-        }
-
+        }*/
     }
 }
