@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj": {}
+    "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
+    "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
         "projectName": "TorneoDeFutbol.App.Dominio",
-        "projectPath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Mayda\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Dominio\\obj\\",
+        "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\jhonnatanz\\.nuget\\packages\\",
+        "outputPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mayda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\jhonnatanz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -52,21 +52,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj": {
+    "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj",
         "projectName": "TorneoDeFutbol.App.Persistencia",
-        "projectPath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Mayda\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Persistencia\\obj\\",
+        "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\jhonnatanz\\.nuget\\packages\\",
+        "outputPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mayda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\jhonnatanz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -78,8 +78,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
-                "projectPath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj"
+              "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
+                "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj"
               }
             }
           }
@@ -96,23 +96,23 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             }
           },
           "imports": [
@@ -130,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
