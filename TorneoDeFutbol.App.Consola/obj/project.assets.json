@@ -5796,19 +5796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\jhonnatanz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Consola\\TorneoDeFutbol.App.Consola.csproj",
+      "projectUniqueName": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Consola\\TorneoDeFutbol.App.Consola.csproj",
       "projectName": "TorneoDeFutbol.App.Consola",
-      "projectPath": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Consola\\TorneoDeFutbol.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Consola\\obj\\",
+      "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Consola\\TorneoDeFutbol.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\jhonnatanz\\.nuget\\packages\\",
+      "outputPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jhonnatanz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5820,11 +5820,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj"
+            "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
+              "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj"
             },
-            "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj"
+            "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj": {
+              "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Persistencia\\TorneoDeFutbol.App.Persistencia.csproj"
             }
           }
         }

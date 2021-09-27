@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iQTlvOEdsIy359X1zNbHBdaz9DgQw2hRM5RH2KWmngA9wZMDTWl8JS6oVnVPZ38yaXr1h9nUKTpO37iJCnja5g==",
+  "dgSpecHash": "mRy27dLdA40R+3Rr7yyio1AevlqL336XYXtIRKSU16Nt/4xr8Z4XX83moTXQxpoDcihv07EGXDjsrf7yx+bTKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
+  "projectFilePath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

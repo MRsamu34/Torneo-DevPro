@@ -24,7 +24,7 @@ namespace TorneoDeFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        public IEnumerable<Desempeño> GetAllDesempeño()
+        public IEnumerable<Desempeño> GetAllDesempeños()
         {
             return _appContext.Desempeño;
         }

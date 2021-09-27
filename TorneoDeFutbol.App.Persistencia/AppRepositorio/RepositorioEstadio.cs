@@ -24,7 +24,7 @@ namespace TorneoDeFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        public IEnumerable<Estadio> GetAllEstadio()
+        public IEnumerable<Estadio> GetAllEstadios()
         {
             return _appContext.Estadio;
         }
@@ -39,13 +39,11 @@ namespace TorneoDeFutbol.App.Persistencia
             var estadioEncontrado = _appContext.Estadio.Find(estadio.Id);
             if (estadioEncontrado != null)
             {
-                estadioEncontrado.NumeroPartidos = estadio.NumeroPartidos;
-                estadioEncontrado.PartidosGanados = estadio.PartidosGanados;
-                estadioEncontrado.PartidosEmpatados = estadio.PartidosEmpatados;
-                estadioEncontrado.GolesAfavor = estadio.GolesAfavor;
-                estadioEncontrado.GolesEncontra = estadio.GolesEncontra;
-                estadioEncontrado.Puntos = estadio.Puntos;
-                
+                estadioEncontrado.Nombre = estadio.Nombre;
+                estadioEncontrado.Direccion = estadio.Direccion;
+                estadioEncontrado.Municipio = estadio.Municipio;
+                estadioEncontrado.Partido = estadio.Partido;
+               
                 _appContext.SaveChanges();
             }
             return estadioEncontrado;

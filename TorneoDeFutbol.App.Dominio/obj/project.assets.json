@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\jhonnatanz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
       "projectName": "TorneoDeFutbol.App.Dominio",
-      "projectPath": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\TorneoRepositorio.App\\TorneoDeFutbol.App.Dominio\\obj\\",
+      "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\jhonnatanz\\.nuget\\packages\\",
+      "outputPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jhonnatanz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
