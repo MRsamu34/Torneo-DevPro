@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj": {}
+    "C:\\Users\\Mayda\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj": {}
   },
   "projects": {
-    "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj": {
+    "C:\\Users\\Mayda\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
+        "projectUniqueName": "C:\\Users\\Mayda\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
         "projectName": "TorneoDeFutbol.App.Servicios",
-        "projectPath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
+        "projectPath": "C:\\Users\\Mayda\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
         "packagesPath": "C:\\Users\\Mayda\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Servicios\\obj\\",
+        "outputPath": "C:\\Users\\Mayda\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mayda\\AppData\\Roaming\\NuGet\\NuGet.Config"

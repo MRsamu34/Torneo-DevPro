@@ -6,13 +6,7 @@ namespace TorneoDeFutbol.App.Persistencia
     public class RepositorioMunicipio : IRepositorioMunicipio
     {
         private readonly AppContext _appContext = new AppContext();
-/*
-        private readonly AppContext _appContext;
-        public RepositorioMunicipio(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
-*/
+
         public Municipio AddMunicipio(Municipio municipio)
         {
             var municipioAdicionado = _appContext.Municipio.Add(municipio);

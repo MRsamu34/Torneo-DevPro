@@ -6,11 +6,11 @@ namespace TorneoDeFutbol.App.Consola
 {
     class Program
     {
-        private static IRepositorioMunicipio _repoMunicipio= new RepositorioMunicipio();
+        //private static IRepositorioMunicipio _repoMunicipio= new RepositorioMunicipio();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AddMunicipio();
+         //   AddMunicipio();
            // BuscarMunicipio();
             //MostrarMunicipio();
 
@@ -18,7 +18,7 @@ namespace TorneoDeFutbol.App.Consola
 
 //---------------- MUNICIPIO ----------- Agrega a la base de datos....
 
-        private static void AddMunicipio()
+   /*     private static void AddMunicipio()
         {
             var municipio = new Municipio
             {

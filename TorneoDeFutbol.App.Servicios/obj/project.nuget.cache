@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YtHkOEuFxVSrTDAOfbkUuZAfRSLMIOC+i46wZ7L+Yib5cMUKxoJUCqrGKGbQSgRZwKBE2aH9jqYE5bjicV3CTg==",
+  "dgSpecHash": "tBMiRojB/tWarr7WzaVAbc2EjiigayBfjI3HbONsHdwyWyDEVeN5ky+ROFik9XDYTEIOVFSg4baHWSX4gJUTCA==",
   "success": true,
-  "projectFilePath": "C:\\Proyectos\\Reto__ciclo_3\\TorneoDeFutbol.App\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
+  "projectFilePath": "C:\\Users\\Mayda\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mayda\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Mayda\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

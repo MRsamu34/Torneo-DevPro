@@ -34,3 +34,15 @@ C:\Users\Usuario\TorneoRepositorio.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5
 C:\Users\Usuario\TorneoRepositorio.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
 C:\Users\Usuario\TorneoRepositorio.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
 C:\Users\Usuario\TorneoRepositorio.App\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.deps.json
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.AssemblyInfo.cs
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Mayda\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb

@@ -11,23 +11,16 @@ namespace TorneoDeFutbol.App.Dominio
 
 public class Desempeño 
 
-{// Identificador único del Desempeño 
-    public int Id { get; set; }
+    {// Identificador único del Desempeño 
+        public int Id { get; set; }
+        public int NumeroPartidos { get; set; }
+        public int PartidosGanados { get; set; }
+        public int PartidosEmpatados { get; set; }
+        public int GolesAfavor { get; set; }
+        public int GolesEncontra { get; set; }
+        public int Puntos { get; set; }
 
 
-    public int NumeroPartidos { get; set; }
-
-
-    public int PartidosGanados { get; set; }
-    public int PartidosEmpatados { get; set; }
-
-
-
-    public int GolesAfavor { get; set; }
-    public int GolesEncontra { get; set; }
-    public int Puntos { get; set; }
-
-
+    }
 }
- }
   
