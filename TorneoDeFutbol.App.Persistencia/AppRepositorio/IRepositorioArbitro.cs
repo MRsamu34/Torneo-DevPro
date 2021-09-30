@@ -13,4 +13,3 @@ namespace TorneoDeFutbol.App.Persistencia
         Arbitro GetArbitro(int idArbitro);
     }
 }
-

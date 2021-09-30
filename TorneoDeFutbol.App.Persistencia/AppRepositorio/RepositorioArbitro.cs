@@ -7,11 +7,11 @@ namespace TorneoDeFutbol.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
 
-        public Arbitro AddArbitro(Arbitro arbitro)
+        public Arbitro AddArbitro(Arbitro arbitro)/////////
         {
-            var arbitroAdicionado = _appContext.Arbitro.Add(arbitro);
+            var ArbitroAdicionado = _appContext.Arbitro.Add(arbitro);
             _appContext.SaveChanges();
-            return arbitroAdicionado.Entity;
+            return ArbitroAdicionado.Entity;
         }
 
         public void DeleteArbitro(int idArbitro)
@@ -46,3 +46,5 @@ namespace TorneoDeFutbol.App.Persistencia
         }
     }
 }
+
+
