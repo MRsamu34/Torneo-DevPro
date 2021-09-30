@@ -17,8 +17,8 @@ namespace TorneoDeFutbol.App.Persistencia
 
         public void DeleteJugador(int idJugador)
         {
-            var jugadorEncontrado = _appContext.Equipo.Find(idJugador);
-            if (jugadoroEncontrado == null)
+            var jugadorEncontrado = _appContext.Jugador.Find(idJugador);
+            if (jugadorEncontrado == null)
                 return;
             _appContext.Jugador.Remove(jugadorEncontrado);
             _appContext.SaveChanges();
@@ -40,14 +40,12 @@ namespace TorneoDeFutbol.App.Persistencia
             if (jugadorEncontrado != null)
             {
                 jugadorEncontrado.Nombre = jugador.Nombre;
-                jugadorEncontrado.Partido_id = jugador.Partido_id;
-                jugadoresEncontrado.Equipo = jugadores.Equipo;
-                equipoEncontrado.Municipio_id = equipo.Municipio_id;
-                
+                jugadorEncontrado.Numero = jugador.Numero;
+                jugadorEncontrado.Posicion = jugador.Posicion;               
                 
                 _appContext.SaveChanges();
             }
-            return jugadoroEncontrado;
+            return jugadorEncontrado;
         }
     }
 }

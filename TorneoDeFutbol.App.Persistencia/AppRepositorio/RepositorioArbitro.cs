@@ -9,7 +9,7 @@ namespace TorneoDeFutbol.App.Persistencia
 
         public Arbitro AddArbitro(Arbitro arbitro)/////////
         {
-            var ArbitroAdicionado = _appContext.Arbitro.Add(arbitro);
+            var arbitroAdicionado = _appContext.Arbitro.Add(arbitro);
             _appContext.SaveChanges();
             return arbitroAdicionado.Entity;
         }

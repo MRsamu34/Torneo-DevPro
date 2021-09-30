@@ -21,7 +21,7 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
 
             modelBuilder.Entity("TorneoDeFutbol.App.Dominio.Arbitro", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -32,16 +32,16 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                     b.Property<int>("Documento")
                         .HasColumnType("int");
 
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("PartidoId")
                         .HasColumnType("int");
 
                     b.Property<int>("Telefono")
                         .HasColumnType("int");
 
-                    b.Property<string>("nombre")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.HasIndex("PartidoId");
 

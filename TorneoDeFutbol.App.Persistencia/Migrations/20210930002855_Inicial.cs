@@ -101,9 +101,9 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                 name: "Arbitro",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Documento = table.Column<int>(type: "int", nullable: false),
                     Telefono = table.Column<int>(type: "int", nullable: false),
                     Colegio = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -111,7 +111,7 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Arbitro", x => x.id);
+                    table.PrimaryKey("PK_Arbitro", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Arbitro_Partido_PartidoId",
                         column: x => x.PartidoId,

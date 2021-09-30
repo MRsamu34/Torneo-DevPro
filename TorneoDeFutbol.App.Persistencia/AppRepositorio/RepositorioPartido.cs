@@ -17,7 +17,7 @@ namespace TorneoDeFutbol.App.Persistencia
 
         public void DeletePartido(int idPartido)
         {
-            var partidoEncontrado = _appContext.Equipo.Find(idPartido);
+            var partidoEncontrado = _appContext.Partido.Find(idPartido);
             if (partidoEncontrado == null)
                 return;
             _appContext.Partido.Remove(partidoEncontrado);
@@ -40,11 +40,11 @@ namespace TorneoDeFutbol.App.Persistencia
             if (partidoEncontrado != null)
             {
                
-                partidoEncontrado.Partido_id = partido.Partido_id;
-                equipoEncontrado.Municipio_id = equipo.Municipio_id;
-                jugadoresEncontrado.Equipo = jugadores.Equipo;
-                
-                
+                partidoEncontrado.FechaHora = partido.FechaHora;
+                partidoEncontrado.Equipo_Local = partido.Equipo_Local;
+                partidoEncontrado.Marcador_Inicial_Equipo_Local = partido.Marcador_Inicial_Equipo_Local;
+                partidoEncontrado.Equipo_Visitante = partido.Equipo_Visitante;
+                partidoEncontrado.Marcador_Inicial_Equipo_Visitante = partido.Marcador_Inicial_Equipo_Visitante;                
                 _appContext.SaveChanges();
             }
             return partidoEncontrado;
