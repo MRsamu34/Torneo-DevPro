@@ -46,3 +46,15 @@ C:\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.
 C:\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
 C:\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
 C:\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.deps.json
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\bin\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.AssemblyInfo.cs
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoDeFutbol.App.Dominio.dll
+C:\Users\Cardo\OneDrive\Documents\GitHub\Torneo-DevPro\TorneoDeFutbol.App.Dominio\obj\Debug\net5.0\TorneoDeFutbol.App.Dominio.pdb

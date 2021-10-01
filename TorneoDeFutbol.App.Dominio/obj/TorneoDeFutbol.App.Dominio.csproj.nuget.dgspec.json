@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {}
+    "C:\\Users\\Cardo\\OneDrive\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
+    "C:\\Users\\Cardo\\OneDrive\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Cardo\\OneDrive\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
         "projectName": "TorneoDeFutbol.App.Dominio",
-        "projectPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\jhonnatanz\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Cardo\\OneDrive\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\TorneoDeFutbol.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Cardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cardo\\OneDrive\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jhonnatanz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Cardo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

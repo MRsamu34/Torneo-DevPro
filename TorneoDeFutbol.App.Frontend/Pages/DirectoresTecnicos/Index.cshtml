@@ -1,0 +1,25 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.DirectoresTecnicos.IndexModel
+@{
+}
+<h1>Listado de Directores Tecnicos</h1>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Documento</th>
+            <th scope="col">NumeroTelefono</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var directorTecnico in Model.directoresTecnicos){
+            <tr>
+                <th>@directorTecnico.Nombre</th>
+                <td>@directorTecnico.Documento</td>
+                <td>@directorTecnico.NumeroTelefono</td>
+                <td><a class="btn btn-primary" asp-page="./Details" asp-rout-id="@directorTecnico.Id">Detalle</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
