@@ -1,0 +1,28 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Arbitros.DetailsModel
+@{
+}
+<h1>Detalle De Arbitros</h1>
+<table class="table">
+  <thead class="thead-dark">
+      <thead>
+    <tr>
+      <th scope="col">NOMBRE</th>
+       <td>@Model.arbitro.Nombre</td>
+       
+      <th scope="col">DOCUMENTO</th>
+       <td>@Model.arbitro.Documento</td>
+
+      <th scope="col">TELEFONO</th>
+       <td>@Model.arbitro.Telefono</td>
+
+      <th scope="col">COLEGIO</th>
+       <td>@Model.arbitro.Colegio</td>
+
+      <th scope="col">PARTIDO</th>
+       <td>@Model.arbitro.Partido</td>
+     
+    </tr>
+  </thead>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
