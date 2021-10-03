@@ -7,8 +7,8 @@ namespace TorneoDeFutbol.App.Dominio
     public class Novedades
     {
         public int Id { get; set; } 
-        public int TagetasAmarillas { get; set; }
-        public int TagetasRojas { get; set; }
+        public int YellowCards { get; set; }
+        public int RedCards { get; set; }
         public int  goles { get; set; }
         public string NombreNovedad {get; set;}
         public DateTime Minuto  { get; set; }

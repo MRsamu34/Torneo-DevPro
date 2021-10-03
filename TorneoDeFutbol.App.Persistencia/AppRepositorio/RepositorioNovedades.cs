@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using TorneoDeFutbol.App.Dominio;
+using System.Linq;
 
 namespace TorneoDeFutbol.App.Persistencia
 {
@@ -39,8 +40,8 @@ namespace TorneoDeFutbol.App.Persistencia
             var novedadesEncontrado = _appContext.Novedades.Find(novedades.Id);
             if (novedadesEncontrado != null)
             {
-                novedadesEncontrado.TagetasRojas = novedades.TagetasRojas;
-                novedadesEncontrado.TagetasAmarillas = novedades.TagetasAmarillas;
+                novedadesEncontrado.RedCards = novedades.RedCards;
+                novedadesEncontrado.YellowCards = novedades.YellowCards;
                 novedadesEncontrado.goles = novedades.goles;
                 novedadesEncontrado.NombreNovedad = novedades.NombreNovedad;
                 novedadesEncontrado.Minuto = novedades.Minuto;

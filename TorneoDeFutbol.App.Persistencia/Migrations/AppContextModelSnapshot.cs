@@ -238,10 +238,10 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                     b.Property<string>("NombreNovedad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TagetasAmarillas")
+                    b.Property<int>("RedCards")
                         .HasColumnType("int");
 
-                    b.Property<int>("TagetasRojas")
+                    b.Property<int>("YellowCards")
                         .HasColumnType("int");
 
                     b.Property<int>("goles")

@@ -199,8 +199,8 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TagetasAmarillas = table.Column<int>(type: "int", nullable: false),
-                    TagetasRojas = table.Column<int>(type: "int", nullable: false),
+                    YellowCards = table.Column<int>(type: "int", nullable: false),
+                    RedCards = table.Column<int>(type: "int", nullable: false),
                     goles = table.Column<int>(type: "int", nullable: false),
                     NombreNovedad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Minuto = table.Column<DateTime>(type: "datetime2", nullable: false),
