@@ -1,0 +1,20 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Estadios.DetailsModel
+@{
+}
+<h1>Detalles del Estadio</h1>
+<table class="table table-striped table-dark">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.estadio.Nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Direccion</th>
+        <td>@Model.estadio.Direccion</td>
+    </tr>
+    <tr>
+        <th scope="col">Municipio</th>
+        <td>@Model.estadio.Municipio</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
