@@ -1,0 +1,36 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Arbitros.IndexModel
+@{
+}
+<h1>Lista De Arbitros</h1>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Documento</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Colegio</th>
+      <th scope="col">Partido</th>
+      <th scope="col">Acciones</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+        
+      @foreach (var arbitro in Model.arbitros)
+      {
+           <tr>
+                <th>@arbitro.Nombre</th>
+                <th>@arbitro.Documento</th>
+                <th>@arbitro.Telefono</th>
+                <th>@arbitro.Colegio</th>
+                <th>@arbitro.Partido</th>
+		            <td>
+                  <a class="btn btn-primary" asp-page="./Details" asp-rout-id="@arbitro.Id">Detalle</a>
+                </td>
+               
+           </tr>
+      }
+    
+  </tbody>
+</table>
