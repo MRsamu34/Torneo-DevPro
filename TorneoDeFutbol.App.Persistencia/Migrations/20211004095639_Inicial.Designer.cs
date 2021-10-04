@@ -10,7 +10,7 @@ using TorneoDeFutbol.App.Persistencia;
 namespace TorneoDeFutbol.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211003204413_Inicial")]
+    [Migration("20211004095639_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
