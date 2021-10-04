@@ -21,7 +21,7 @@ namespace TorneoDeFutbol.App.Persistencia
         {
          if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=CLODESARROLLO06\\SQLEXPRESS; Initial Catalog=TorneoDeFutbolData;Trusted_Connection=True");
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=TorneoDeFutbolData");
             }
         }
     }
