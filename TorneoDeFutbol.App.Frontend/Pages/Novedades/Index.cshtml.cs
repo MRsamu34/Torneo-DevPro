@@ -12,7 +12,7 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Novedades
     public class IndexModel : PageModel
     {
         private readonly IRepositorioNovedades _repoNovedades;
-        public IEnumerable<Novedades> novedades {get;set;}
+        // public IEnumerable<Novedades> novedades {get;set;}
         // public IndexModel(IRepositorioNovedades repoNovedades){
         //     _repoNovedades = repoNovedades;
         // }
