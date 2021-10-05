@@ -1,0 +1,36 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Partidos.IndexModel
+@{
+}
+<h1>Listados de Partidos</h1>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Fecha Hora</th>
+      <th scope="col">Equipo Local</th>
+      <th scope="col">Marcador Inicial Equipo Local</th>
+      <th scope="col">Equipo Visitante</th>
+      <th scope="col">Marcador Inicial Equipo Visitante</th>
+       <th scope="col">Acciones</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var partido in Model.partidos)
+    {
+        <tr>
+            <th>@partido.FechaHora</th>
+            <td>@partido.Equipo_Local</td>
+            <td>@partido.Marcador_Inicial_Equipo_Local</td>
+            <td>@partido.Equipo_Visitante</td>
+            <td>@partido.Marcador_Inicial_Equipo_Visitante</td>
+             <td>
+
+              <a class="btn btn-primary" asp-page="./Details" asp-route-id="@partido.Id">Detalle</a>
+              <td>
+
+        
+        </tr>
+    }
+    <tbody>
+</table>
