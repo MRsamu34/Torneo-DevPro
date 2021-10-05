@@ -1,0 +1,33 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.MarcadoresFinales.IndexModel
+@{
+}
+<div class="card mb-4 shadow bg-body rounded">
+    <div class="card-body text-primary fs-1 ">Marcador final</div>
+</div>
+
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+            <td>Equipo ganador</td>
+            <td>Marcador ganador</td>
+            <td>Equipo perdedor</td>
+            <td>Marcador perdedor</td>
+            <td>Partido</td></tr>
+        </thead>
+        <tbody>
+            @foreach(var marcador in Model.marcadorFinal){
+                <tr>
+                    <td>@marcador.EquipoGanador</td>
+                    <td>@marcador.MarcadorGanador</td>
+                    <td>@marcador.EquipoPerdedor</td>
+                    <td>@marcador.MarcadorPerdedor</td>
+                    <td>@marcador.Partido</td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>
