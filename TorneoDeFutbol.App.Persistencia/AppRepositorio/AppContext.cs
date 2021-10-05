@@ -13,7 +13,7 @@ namespace TorneoDeFutbol.App.Persistencia
         public DbSet<Estadio> Estadio{get; set;}
         public DbSet<Jugador> Jugador{get; set;}
         public DbSet<MarcadorFinal> MarcadorFinal{get; set;}
-        public DbSet<Novedades> Novedades{get; set;}
+        public DbSet<Novedad> Novedad{get; set;}
         public DbSet<Partido> Partido{get; set;}
     
 
