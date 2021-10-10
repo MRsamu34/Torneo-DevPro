@@ -2,23 +2,31 @@
 @model TorneoDeFutbol.App.Frontend.Pages.Arbitros.DetailsModel
 @{
 }
-<h1>Detalle De Arbitros</h1>
+<h1>Detalle De Arbitro</h1>
 <table class="table table-dark">
       
     <tr>
-      <th scope="col">NOMBRE</th>
+      <th scope="col">Nombre</th>
        <td>@Model.arbitro.Nombre</td>
-       
-      <th scope="col">DOCUMENTO</th>
+    </tr>
+
+    <tr>  
+      <th scope="col">Documento</th>
        <td>@Model.arbitro.Documento</td>
+    </tr>
 
-      <th scope="col">TELEFONO</th>
+    <tr>
+      <th scope="col">Telefono</th>
        <td>@Model.arbitro.Telefono</td>
-
-      <th scope="col">COLEGIO</th>
+    </tr>
+    
+    <tr>
+      <th scope="col">Colegio</th>
        <td>@Model.arbitro.Colegio</td>
+    </tr>
 
-      <th scope="col">PARTIDO</th>
+    <tr>
+      <th scope="col">Partido</th>
        <td>@Model.arbitro.Partido</td>
      
     </tr>

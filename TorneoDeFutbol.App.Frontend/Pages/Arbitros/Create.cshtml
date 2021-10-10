@@ -1,0 +1,36 @@
+﻿@page
+@using TorneoDeFutbol.App.Dominio
+@model TorneoDeFutbol.App.Frontend.Pages.Arbitros.CreateModel
+@{
+}
+<h1>Nuevo Arbitro</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="arbitro.Nombre"></label>
+        <input asp-for="arbitro.Nombre" class="form-control">
+        <span asp-validation-for="arbitro.Nombre" class="text-danger"></span>
+    </div>
+     <div class="form-group">
+        <label asp-for="arbitro.Documento"></label>
+        <input asp-for="arbitro.Documento" class="form-control">
+        <span asp-validation-for="arbitro.Documento" class="text-danger"></span>
+    </div>
+     <div class="form-group">
+        <label asp-for="arbitro.Telefono"></label>
+        <input asp-for="arbitro.Telefono" class="form-control">
+    </div>
+     <div class="form-group">
+        <label asp-for="arbitro.Colegio"></label>
+        <input asp-for="arbitro.Colegio" class="form-control">
+        <span asp-validation-for="arbitro.Colegio" class="text-danger"></span>
+    </div>
+     <div class="form-group">
+        <label asp-for="arbitro.Partido"></label>
+        <input asp-for="arbitro.Partido" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Crear arbitro</button>
+</form>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
+
+
+
