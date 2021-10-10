@@ -56,26 +56,26 @@ namespace TorneoDeFutbol.App.Consola
         }*/
         
         //---------------- ESTADIO ----------- Agrega a la base de datos....
-        private static void AddEstadio()
-        {
-            var municipio = _repoMunicipio.GetMunicipio(1);
+        // private static void AddEstadio()
+        // {
+        //     var municipio = _repoMunicipio.GetMunicipio(1);
             
-            var estadio = new Estadio()
-            {
-                Nombre = "Atanasio Girardot",
-                Direccion = "Cr 55 Av-Barranquilla",
-                //Municipio = municipio
-            };
-            _repoEstadio.AddEstadio(estadio);
-        }
-        //Mostrando el estadio
-        private static void MostrarEstadio()
-        {
-            var estadios = _repoEstadio.GetAllEstadios();
-            foreach (var estadio in estadios)
-            {
-                Console.WriteLine(estadio.Nombre);
-            }
-        }
+        //     var estadio = new Estadio()
+        //     {
+        //         Nombre = "Atanasio Girardot",
+        //         Direccion = "Cr 55 Av-Barranquilla",
+        //         //Municipio = municipio
+        //     };
+        //     _repoEstadio.AddEstadio(estadio);
+        // }
+        // //Mostrando el estadio
+        // private static void MostrarEstadio()
+        // {
+        //     var estadios = _repoEstadio.GetAllEstadios();
+        //     foreach (var estadio in estadios)
+        //     {
+        //         Console.WriteLine(estadio.Nombre);
+        //     }
+        // }
     }
 }

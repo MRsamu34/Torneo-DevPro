@@ -2,9 +2,9 @@ using System;
 
 namespace TorneoDeFutbol.App.Dominio
 {
-    /// <summary>Class <c>Novedades</c>
+    /// <summary>Class <c>Novedad</c>
     /// </summary>   
-    public class Novedades
+    public class Novedad
     {
         public int Id { get; set; } 
         public int YellowCards { get; set; }
