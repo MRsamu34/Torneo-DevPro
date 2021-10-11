@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "cSDe8P8UKS9ZP3Hwa7UqQq18l80rdOJMpiCxIJGrnHaLmzJCc9OLNg62ONqh0R4gal0vs9q2xC1OvQmS+rdkWw==",
+  "dgSpecHash": "b5U/HWSfXTVQMCuofT5WVGfGspLrTILWkR0tA4XYSnR8iyarX47Tz7QNVUtT/g+4Nq77XfdbgQy4MIT4xB7W9A==",
   "success": true,
-  "projectFilePath": "C:\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
+  "projectFilePath": "C:\\Users\\Cardo\\OneDrive\\Documents\\GitHub\\Torneo-DevPro\\TorneoDeFutbol.App.Servicios\\TorneoDeFutbol.App.Servicios.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jhonnatanz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\jhonnatanz\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\jhonnatanz\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "C:\\Users\\jhonnatanz\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\jhonnatanz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\jhonnatanz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\Cardo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Cardo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Cardo\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Cardo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Cardo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Cardo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
   ],
   "logs": []
 }

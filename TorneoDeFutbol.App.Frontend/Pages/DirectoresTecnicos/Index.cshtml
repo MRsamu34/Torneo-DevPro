@@ -6,6 +6,7 @@
     <div class="card-body text-primary fs-1 ">Listado de directores técnicos</div>
 </div>
 <div class="card-body">
+<a class="btn btn-primary" asp-page="./Create">Nuevo director tecnico</a>   
 <table class="table table-bordered">
     <thead >
         <tr>
@@ -21,7 +22,10 @@
                 <th>@directorTecnico.Nombre</th>
                 <td>@directorTecnico.Documento</td>
                 <td>@directorTecnico.NumeroTelefono</td>
-                <td><a class="btn btn-primary" asp-page="./Details" asp-rout-id="@directorTecnico.Id">Detalle</a></td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@directorTecnico.Id">Detalle</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@directorTecnico.Id">Editar</a>
+                </td>
             </tr>
         }
     </tbody>

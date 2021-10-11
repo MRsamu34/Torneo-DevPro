@@ -13,6 +13,9 @@ namespace TorneoDeFutbol.App.Consola
             AddMunicipio();
             //BuscarMunicipio();
             //MostrarMunicipio();
+            //AddDirectorTecnico();
+            //BuscarDirectorTecnico();
+            //MostrarDirectoresTecnicos();
             //AddEstadio();
             //MostrarEstadio();
 
@@ -43,17 +46,55 @@ namespace TorneoDeFutbol.App.Consola
             }
         }
 
-        //---------------- EQUIPO ----------- Agrega a la base de datos....
+        //---------------- DIRECTOR TECNICO ----------- Agrega a la base de datos....
 
-       /*   private static void AddEquipo()
+        /*private static void AddDirectorTecnico()
+        {
+            var directorTecnico = new DirectorTecnico
+            {
+                Nombre = "Rafael",
+                Documento = "1010",
+                NumeroTelefono = "2648840",
+
+               };
+            _repoDirectorTecnico.AddDirectorTecnico(directorTecnico);
+        }
+
+        private static void BuscarDirectorTecnico(int idDirectorTecnico)
+        {
+            var directorTecnico = _repoDirectorTecnico.GetDirectorTecnico(idDirectorTecnico);
+            Console.WriteLine(directorTecnico.Nombre);
+        }
+
+        private static void MostrarDirectoresTecnicos()
+        {
+            var directoresTecnicos = _repoDirectorTecnico.GetAllDirectoresTecnicos();
+            foreach (var directorTecnico in directoresTecnicos)
+            {
+                Console.WriteLine(directorTecnico.Nombre);
+            }
+        }*/
+
+        //------------EQUIPO -----------Agrega a la base de datos ------
+
+        /*private static void AddEquipo()
         {
             var equipo = new Equipo
             {
-                Nombre = "Meta",
-              //  DirectorTecnico = new
+                Nombre = "Tolima",
+                //Tengo una duda aqui como hago la relacion con el id de municipio, director tecnico y jugador
+                DirectorTecnico = DirectorTecnico.Nombre,
+                Municipio = Municipio.Nombre,
+                Jugadores =.................,
+
+
                };
             _repoEquipo.AddEquipo(equipo);
         }*/
+
+
+
+
         
         //---------------- ESTADIO ----------- Agrega a la base de datos....
         // private static void AddEstadio()
