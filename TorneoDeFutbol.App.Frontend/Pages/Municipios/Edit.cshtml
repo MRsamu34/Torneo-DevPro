@@ -1,0 +1,20 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Municipios.EditModel
+@{
+}
+<h1>Editar Municipio</h1>
+<form method="post">
+    
+    <div class="form-group">
+        <label asp-for="municipio.Id"></label>
+        <input asp-for="municipio.Id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="municipio.Nombre"></label>
+        <input asp-for="municipio.Nombre" class="form-control">
+       
+    </div>
+    <button type="submit" class="btn btn-primary">Editar municipio</button> 
+</form>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
+

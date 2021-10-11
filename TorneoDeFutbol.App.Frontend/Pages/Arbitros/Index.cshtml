@@ -2,8 +2,9 @@
 @model TorneoDeFutbol.App.Frontend.Pages.Arbitros.IndexModel
 @{
 }
+
 <div class="card mb-4 shadow bg-body rounded">
-    <div class="card-body text-primary fs-1 ">Lista de arbitros</div>
+<div class="card-body text-primary fs-1 ">Lista de arbitros</div>
 </div>
 <div class="card-body">
 <table class="table table-bordered">
@@ -29,12 +30,14 @@
                 <th>@arbitro.Colegio</th>
                 <th>@arbitro.Partido</th>
 		            <td>
-                  <a class="btn btn-primary" asp-page="./Details" asp-rout-id="@arbitro.Id">Detalle</a>
-                </td>
+                  <a class="btn btn-primary" asp-page="./Details" asp-route-id="@arbitro.Id">Detalle</a>
+                  <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@arbitro.Id">Modificar</a>
+                <td>
                
            </tr>
       }
     
   </tbody>
 </table>
+<a class="btn btn-primary" asp-page="./Create">Nuevo arbitro</a>
 </div>
