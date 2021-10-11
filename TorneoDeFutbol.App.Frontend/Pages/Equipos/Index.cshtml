@@ -6,12 +6,13 @@
     <div class="card-body text-primary fs-1 ">Listado Equipos</div>
 </div>
 <div class="card-body">
+<a class="btn btn-primary" asp-page="./Create">Nuevo equipo</a>
 <table class="table table-bordered">
     <thead >
         <tr>
             <th scope="col">Nombre</th>
-            <th scope="col">DirectorTecnico_id</th>
-            <th scope="col">Municipio_id</th>
+            <th scope="col">DirectorTecnico</th>
+            <th scope="col">Municipio</th>
             <th scope="col">Jugadores</th>
             <th scope="col">Acciones</th>
         </tr>
@@ -23,7 +24,11 @@
                 <td>@equipo.DirectorTecnico_id</td>
                 <td>@equipo.Municipio_id</td>
                 <td>@equipo.Jugadores</td>
-                <td><a class="btn btn-primary" asp-page="./Details" asp-rout-id="@equipo.Id">Detalle</a></td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@equipo.Id">Detalle</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@equipo.Id">Editar</a>
+                
+                </td>
             </tr>
         }
     </tbody>
