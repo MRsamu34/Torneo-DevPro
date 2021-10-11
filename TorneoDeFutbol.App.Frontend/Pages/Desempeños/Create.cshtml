@@ -1,0 +1,34 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Desempeños.CreateModel
+@{
+}
+<h1>Nuevo Desempeño</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="desempeño.NumeroPartidos"></label>
+        <input asp-for="desempeño.NumeroPartidos" class="form-control">
+        <span asp-validation-for="desempeño.NumeroPartidos" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="desempeño.PartidosGanados"></label>
+        <input asp-for="desempeño.PartidosGanados" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="desempeño.PartidosEmpatados"></label>
+        <input asp-for="desempeño.PartidosEmpatados" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="desempeño.GolesAfavor"></label>
+        <input asp-for="desempeño.GolesAfavor" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="desempeño.GolesEncontra"></label>
+        <input asp-for="desempeño.GolesEncontra" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="desempeño.Puntos"></label>
+        <input asp-for="desempeño.Puntos" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Crear desempeño</button>
+</form>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

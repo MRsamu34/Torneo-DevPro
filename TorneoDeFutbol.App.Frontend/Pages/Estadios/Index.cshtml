@@ -5,30 +5,36 @@
 <div class="card mb-4 shadow bg-body rounded">
     <div class="card-body text-primary fs-1 ">Listado De Estadios</div>
 </div>
+<a class="btn btn-primary" asp-page="./Create">Nuevo Estadio</a>
 <div class="card-body">
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Dirección</th>
-            <th scope="col">Municipio</th>
-            <th scope="col">Partidos</th>
-            <th scope="col">Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var estadio in Model.estadios)
-        {
+    <table class="table table-bordered">
+        <thead>
             <tr>
-                <td>@estadio.Nombre</td>
-                <td>@estadio.Direccion</td>
-                <td>@estadio.Municipio</td>
-                <td>@estadio.Partido</td>
+                <th scope="col">Nombre</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Municipio</th>
+                <th scope="col">Partidos</th>
+                <th scope="col">Acciones</th>
             </tr>
-            <td>
-                <a class="btn btn-primary" asp-page="./Details" asp-route-id="@estadio.Id">Detalle</a>
-            </td>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var estadio in Model.estadios)
+            {
+                <tr>
+                    <td>@estadio.Nombre</td>
+                    <td>@estadio.Direccion</td>
+                    <td>
+                        @estadio.Municipio
+                    </td>
+                    <td>
+                        @estadio.Partido
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" asp-page="./Details" asp-route-id="@estadio.Id">Detalle</a>
+                        <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@estadio.Id">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

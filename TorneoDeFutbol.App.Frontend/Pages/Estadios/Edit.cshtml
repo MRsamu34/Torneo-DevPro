@@ -1,0 +1,33 @@
+﻿@page
+@using TorneoDeFutbol.App.Dominio
+@model TorneoDeFutbol.App.Frontend.Pages.Estadios.EditModel
+@{
+}
+<h1>Editar Estadio</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="estadio.Id"></label>
+        <input asp-for="estadio.Id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="estadio.Nombre"></label>
+        <input asp-for="estadio.Nombre" class="form-control">
+        <span asp-validation-for="estadio.Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="estadio.Direccion"></label>
+        <input asp-for="estadio.Direccion" class="form-control">
+        <span asp-validation-for="estadio.Direccion" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="estadio.Municipio"></label>
+        <input asp-for="estadio.Municipio" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="estadio.Partido"></label>
+        <input asp-for="estadio.Partido" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Editar estadio</button>
+</form>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
