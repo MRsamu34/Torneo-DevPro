@@ -5,37 +5,38 @@
 <div class="card mb-4 shadow bg-body rounded">
     <div class="card-body text-primary fs-1 ">Desempeño de los equipos</div>
 </div>
+<a class="btn btn-primary" asp-page="./Create">Nuevo Desempeño</a>
 <div class="card-body">
-<table class="table table-bordered ">
-    <thead>
-        <tr>
-            <th scope="col">Equipo</th>
-            <th scope="col">Número de partidos</th>
-            <th scope="col">Partidos ganados</th>
-            <th scope="col">Partidos empatados</th>
-            <th scope="col">Goles a favor</th>
-            <th scope="col">Goles en contra</th>
-            <th scope="col">Puntos</th>
-            <th scope="col">Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var desempeño in Model.desempeños)
-        {
+    <table class="table table-bordered ">
+        <thead>
             <tr>
-                <td>@desempeño.NumeroPartidos</td>
-                <td>@desempeño.PartidosGanados</td>
-                <td>@desempeño.PartidosEmpatados</td>
-                <td>@desempeño.GolesAfavor</td>
-                <td>@desempeño.GolesEncontra</td>
-                <td>@desempeño.Puntos</td>
-                <td>@desempeño.Puntos</td>
-                <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@desempeño.Id">Detalle</a>
-                </td>
+                <th scope="col">Equipo</th>
+                <th scope="col">Número de partidos</th>
+                <th scope="col">Partidos ganados</th>
+                <th scope="col">Partidos empatados</th>
+                <th scope="col">Goles a favor</th>
+                <th scope="col">Goles en contra</th>
+                <th scope="col">Puntos</th>
+                <th scope="col">Acciones</th>
             </tr>
-
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var desempeño in Model.desempeños)
+            {
+                <tr>
+                    <td>@desempeño.NumeroPartidos</td>
+                    <td>@desempeño.PartidosGanados</td>
+                    <td>@desempeño.PartidosEmpatados</td>
+                    <td>@desempeño.GolesAfavor</td>
+                    <td>@desempeño.GolesEncontra</td>
+                    <td>@desempeño.Puntos</td>
+                    <td>@desempeño.Puntos</td>
+                    <td>
+                        <a class="btn btn-primary" asp-page="./Details" asp-route-id="@desempeño.Id">Detalle</a>
+                        <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@desempeño.Id">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

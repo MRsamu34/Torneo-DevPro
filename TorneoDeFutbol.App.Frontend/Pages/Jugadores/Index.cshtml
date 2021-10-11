@@ -3,35 +3,30 @@
 @{
 }
 <div class="card mb-4 shadow bg-body rounded">
-    <div class="card-body text-primary fs-1 ">Listado de jugadores</div>
+  <div class="card-body text-primary fs-1 ">Listado de jugadores</div>
 </div>
 <div class="card-body">
-<table class="table table-bordered">
-  <thead >
-    <tr>
-      <th scope="col">Nombres</th>
-      <th scope="col">Numero</th>
-      <th scope="col">Posicion</th>
-      <th scope="col">Acciones</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    @foreach (var jugador in Model.jugador)
-    {
-        <tr>
-            <th>@jugador.Nombre</th>
-            <td>@jugador.Numero</td>
-            <td>@jugador.Posicion</td>
-            
-            <td>
-
-              <a class="btn btn-primary" asp-page="./Details" asp-route-id="@jugador.Id">Detalle</a>
-              <td>
-         </tr>
-    }
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Nombres</th>
+        <th scope="col">Numero</th>
+        <th scope="col">Posicion</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
     <tbody>
-</table>
+      @foreach (var jugador in Model.jugador)
+      {
+        <tr>
+          <th>@jugador.Nombre</th>
+          <td>@jugador.Numero</td>
+          <td>@jugador.Posicion</td>
+        </tr>
+        <td>
+          <a class="btn btn-primary" asp-page="./Details" asp-route-id="@jugador.Id">Detalle</a>
+        </td>
+      }
+    <tbody>
+  </table>
 </div>
-
-   
