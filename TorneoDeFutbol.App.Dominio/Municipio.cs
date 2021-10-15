@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace TorneoDeFutbol.App.Dominio
 {
@@ -9,7 +10,9 @@ namespace TorneoDeFutbol.App.Dominio
     {
         /// id municipio   
         public int Id { get; set; }
-        /// nombre del municipio 
+      //   [Required(ErrorMessage = "Campo obligatorio")]
+       // [StringLength(50, ErrorMessage = "Longitad maxima 50")]
+
         public string Nombre { get; set; }
     }
 }
