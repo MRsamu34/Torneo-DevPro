@@ -12,14 +12,23 @@ namespace Torneo.App.Frontend.Pages.Municipios
     public class IndexModel : PageModel
     {
         private readonly IRepositorioMunicipio _repoMunicipio;
+        public string bActual {get; set;}
         public IEnumerable<Municipio> municipios {get; set;}
         public IndexModel(IRepositorioMunicipio repoMunicipio)
         {
             _repoMunicipio = repoMunicipio;
         }
-        public void OnGet()
+           public void OnGet(int? g, string b)
         {
-            municipios = _repoMunicipio.GetAllMunicipio();
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual = "";
+                municipios = _repoMunicipio.GetAllMunicipio();
+            }
+            else{
+               bActual = b;
+               municipios = _repoMunicipio.SearchMunicipio(b);
+             }
         }
     }
 }

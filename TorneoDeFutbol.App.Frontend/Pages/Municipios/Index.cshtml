@@ -2,6 +2,13 @@
 @model Torneo.App.Frontend.Pages.Municipios.IndexModel
 @{
 }
+<form method="get">
+    <div class="form-group">
+        <label for="b">Buscar</label>
+        <input name="b" id="b" asp-for="@Model.bActual" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
 
 <div class="card mb-4 shadow bg-body rounded">
 <div class="card-body text-primary fs-1 ">Listado municipios</div>
@@ -23,7 +30,7 @@
                  <td>
                   <a class="btn btn-primary" asp-page="./Details" asp-route-id="@municipio.Id">Detalle</a>
                   <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@municipio.Id">Modificar</a>
-                <td>
+                </td>
                
            </tr>
       }
