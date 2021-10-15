@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using TorneoDeFutbol.App.Dominio;
 
 namespace TorneoDeFutbol.App.Persistencia
@@ -7,7 +9,7 @@ namespace TorneoDeFutbol.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
 
-        public Arbitro AddArbitro(Arbitro arbitro)/////////
+        public Arbitro AddArbitro(Arbitro arbitro)
         {
             var arbitroAdicionado = _appContext.Arbitro.Add(arbitro);
             _appContext.SaveChanges();
@@ -39,10 +41,19 @@ namespace TorneoDeFutbol.App.Persistencia
             if (arbitroEncontrado != null)
             {
                 arbitroEncontrado.Nombre = arbitro.Nombre;
+                arbitroEncontrado.Documento = arbitro.Documento;
+                arbitroEncontrado.Telefono = arbitro.Telefono;
+                arbitroEncontrado.Colegio = arbitro.Colegio;
                 
                 _appContext.SaveChanges();
             }
             return arbitroEncontrado;
+        }
+
+        IEnumerable<Arbitro> IRepositorioArbitro.SearchArbitro(string nombre)
+        {
+            return _appContext.Arbitro
+                        .Where(p => p.Nombre.Contains(nombre));
         }
     }
 }
