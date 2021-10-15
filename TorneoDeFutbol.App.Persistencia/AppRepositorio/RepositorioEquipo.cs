@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using TorneoDeFutbol.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace TorneoDeFutbol.App.Persistencia
 {
@@ -10,6 +12,14 @@ namespace TorneoDeFutbol.App.Persistencia
 
         public Equipo AddEquipo(Equipo equipo)
         {
+            var municipioEncontrado = _appContext.Municipio.Find(equipo.MunicipioId);
+            var directorTecnicoEcontrado = _appContext.DirectorTecnico.Find(equipo.DirectorTecnicoId);
+            var jugadorEncontrado = _appContext.Jugador.Find(equipo.Jugador.FirstOrDefault().Id);
+            equipo.DirectorTecnico = directorTecnicoEcontrado;
+            equipo.Municipio = municipioEncontrado;
+            List<Jugador> jugadores = new List<Jugador>();
+            jugadores.Add(jugadorEncontrado);
+            equipo.Jugador = jugadores;
             var equipoAdicionado = _appContext.Equipo.Add(equipo);
             _appContext.SaveChanges();
             return equipoAdicionado.Entity;
@@ -26,12 +36,22 @@ namespace TorneoDeFutbol.App.Persistencia
 
         public IEnumerable<Equipo> GetAllEquipo()
         {
-            return _appContext.Equipo;
+            var equipos = _appContext.Equipo
+                            .Include(e => e.Jugador)
+                            .Include(e => e.Municipio)
+                            .Include(e => e.DirectorTecnico);
+            
+            return equipos;
         }
 
         public Equipo GetEquipo(int idEquipo)
         {
-            return _appContext.Equipo.Find(idEquipo);
+            return _appContext.Equipo
+                        .Where(e => e.Id == idEquipo)
+                        //.Include(e => e.Jugador)
+                        .Include(e => e.Municipio)
+                        .Include(e => e.DirectorTecnico)
+                        .FirstOrDefault();
         }
 
         public Equipo UpdateEquipo(Equipo equipo)
@@ -40,9 +60,9 @@ namespace TorneoDeFutbol.App.Persistencia
             if (equipoEncontrado != null)
             {
                 equipoEncontrado.Nombre = equipo.Nombre;
-                equipoEncontrado.DirectorTecnico_id = equipo.DirectorTecnico_id;
-                equipoEncontrado.Municipio_id = equipo.Municipio_id;
-                equipoEncontrado.Jugadores = equipo.Jugadores;
+                equipoEncontrado.DirectorTecnico = equipo.DirectorTecnico;
+                equipoEncontrado.Municipio = equipo.Municipio;
+                equipoEncontrado.Jugador = equipo.Jugador;
                 
                 _appContext.SaveChanges();
             }

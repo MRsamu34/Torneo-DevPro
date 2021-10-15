@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using TorneoDeFutbol.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace TorneoDeFutbol.App.Persistencia
 {
@@ -45,6 +47,10 @@ namespace TorneoDeFutbol.App.Persistencia
                 _appContext.SaveChanges();
             }
             return directorTecnicoEncontrado;
+        }
+        IEnumerable<DirectorTecnico> IRepositorioDirectorTecnico.GetDirectoresTecnicosNombre(string nombre){
+            return _appContext.DirectorTecnico
+                        .Where(d => d.Nombre.Contains(nombre));
         }
     }
 }
