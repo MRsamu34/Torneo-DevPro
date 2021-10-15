@@ -18,7 +18,6 @@ namespace TorneoDeFutbol.App.Dominio
         public string Direccion {get; set;}
         [Display(Name = "Municipio")]
         public Municipio Municipio {get; set;}
-        [Display(Name = "Partido")]
-        public Partido Partido {get; set;}
+    
     }
 }
