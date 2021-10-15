@@ -11,9 +11,8 @@
     <thead >
         <tr>
             <th scope="col">Nombre</th>
-            <th scope="col">DirectorTecnico</th>
+            <th scope="col">Director Tecnico</th>
             <th scope="col">Municipio</th>
-            <th scope="col">Jugadores</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -21,11 +20,15 @@
         @foreach (var equipo in Model.equipos){
             <tr>
                 <th>@equipo.Nombre</th>
-                <td>@equipo.DirectorTecnico_id</td>
-                <td>@equipo.Municipio_id</td>
-                <td>@equipo.Jugadores</td>
+                <td>@equipo.DirectorTecnico.Nombre</td>
+                <td>@equipo.Municipio.Nombre</td>
+                <!--<td>
+                    @foreach (var jugador in equipo.Jugador){
+                        <a  asp-page="./Jugadores/Details" asp-route-id="@jugador.Id">@jugador.Nombre</a> 
+                    }
+                </td>-->
                 <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@equipo.Id">Detalle</a>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@equipo.Id">Detalles</a>
                     <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@equipo.Id">Editar</a>
                 
                 </td>

@@ -21,7 +21,7 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Arbitros
         {
             arbitro = new Arbitro();
         }
-        public IActionResult OnPost(Arbitro arbitro)
+         public IActionResult OnPost(Arbitro arbitro)
         {
             if (ModelState.IsValid)
             {
@@ -33,6 +33,7 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Arbitros
            {
                return Page();
            }
+        
         }
     }
 }

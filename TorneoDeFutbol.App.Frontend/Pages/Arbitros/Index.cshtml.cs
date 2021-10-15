@@ -12,14 +12,24 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Arbitros
     public class IndexModel : PageModel
     {
         private readonly IRepositorioArbitro _repoArbitro;
+        public string bActual {get; set;}
         public IEnumerable<Arbitro> arbitros {get; set;}
         public IndexModel(IRepositorioArbitro repoArbitro)
         {
             _repoArbitro = repoArbitro;
         }
-        public void OnGet()
+        
+       public void OnGet(int? g, string b)
         {
-            arbitros = _repoArbitro.GetAllArbitro();
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual = "";
+                arbitros = _repoArbitro.GetAllArbitro();
+            }
+            else{
+               bActual = b;
+               arbitros = _repoArbitro.SearchArbitro(b);
+            }
         }
     }
 }

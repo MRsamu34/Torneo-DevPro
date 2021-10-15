@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using TorneoDeFutbol.App.Dominio;
 
 namespace TorneoDeFutbol.App.Persistencia
@@ -49,6 +51,11 @@ namespace TorneoDeFutbol.App.Persistencia
                 _appContext.SaveChanges();
             }
             return municipioEncontrado;
+        }
+         IEnumerable<Municipio> IRepositorioMunicipio.SearchMunicipio(string nombre)
+        {
+            return _appContext.Municipio
+                        .Where(p => p.Nombre.Contains(nombre));
         }
     }
 }

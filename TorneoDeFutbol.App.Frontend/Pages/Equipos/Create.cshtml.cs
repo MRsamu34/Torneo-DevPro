@@ -23,6 +23,8 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Equipos
 
         public IActionResult OnPost(Equipo equipo){
             if(ModelState.IsValid){
+                //equipo.DirectorTecnicoId = equipo.DirectorTecnico.Id;
+                //equipo.MunicipioId = equipo.Municipio.
                 _repoEquipo.AddEquipo(equipo);
             return RedirectToPage("Index");
             }

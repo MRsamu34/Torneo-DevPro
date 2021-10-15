@@ -2,7 +2,13 @@
 @model TorneoDeFutbol.App.Frontend.Pages.Arbitros.IndexModel
 @{
 }
-
+<form method="get">
+    <div class="form-group">
+        <label for="b">Buscar</label>
+        <input name="b" id="b" asp-for="@Model.bActual" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
 <div class="card mb-4 shadow bg-body rounded">
 <div class="card-body text-primary fs-1 ">Lista de arbitros</div>
 </div>
@@ -14,7 +20,6 @@
       <th scope="col">Documento</th>
       <th scope="col">Telefono</th>
       <th scope="col">Colegio</th>
-      <th scope="col">Partido</th>
       <th scope="col">Acciones</th>
      
     </tr>
@@ -28,11 +33,10 @@
                 <th>@arbitro.Documento</th>
                 <th>@arbitro.Telefono</th>
                 <th>@arbitro.Colegio</th>
-                <th>@arbitro.Partido</th>
 		            <td>
                   <a class="btn btn-primary" asp-page="./Details" asp-route-id="@arbitro.Id">Detalle</a>
                   <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@arbitro.Id">Modificar</a>
-                <td>
+                </td>
                
            </tr>
       }
