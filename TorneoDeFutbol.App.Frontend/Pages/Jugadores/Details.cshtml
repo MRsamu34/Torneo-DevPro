@@ -16,5 +16,16 @@
         <th scope="col">Posicion</th>
         <td>@Model.jugador.Posicion</td>
     </tr> 
+    <tr>
+        <th scope="col">Equipo</th>
+        @if (Model.jugador.Equipo == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddEquipo" asp-route-id="@Model.jugador.Id">Asignar equipo</a></td>
+        } 
+        else
+        {
+            <td>@Model.jugador.Equipo.Nombre</td>
+        }        
+    </tr>
 </table>
 <a class="btn btn-primary" asp-page="./Index">Volver</a>
