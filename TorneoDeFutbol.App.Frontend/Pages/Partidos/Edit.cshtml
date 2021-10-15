@@ -1,0 +1,32 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Partidos.EditModel
+@{
+}
+<h1>Nuevo Partido</h1>
+<form method="post">
+    </div>
+     <div class="form-group">
+        <label asp-for="partido.FechaHora"></label>
+        <input asp-for="partido.FechaHora" class="form-control">
+        <span asp-validation-for="partido.FechaHora" class="text-danger"></span>
+    </div>
+     <div class="form-group">
+        <label asp-for="partido.Equipo_Local"></label>
+        <input asp-for="partido.Equipo_Local" class="form-control">
+    </div>
+     <div class="form-group">
+        <label asp-for="partido.Marcador_Inicial_Equipo_Local"></label>
+        <input asp-for="partido.Marcador_Inicial_Equipo_Local" class="form-control">
+        <span asp-validation-for="partido.Marcador_Inicial_Equipo_Local" class="text-danger"></span>
+    </div>
+     <div class="form-group">
+        <label asp-for="partido.Equipo_Visitante"></label>
+        <input asp-for="partido.Equipo_Visitante" class="form-control">
+    </div>
+     <div class="form-group">
+        <label asp-for="partido.Marcador_Inicial_Equipo_Visitante"></label>
+        <input asp-for="partido.Marcador_Inicial_Equipo_Visitante" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Editar partido</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
