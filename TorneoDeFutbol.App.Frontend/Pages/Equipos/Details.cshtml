@@ -10,15 +10,25 @@
     </tr>
     <tr>
         <th scope="col">Director Tecnico</th>
-        <td>@Model.equipo.DirectorTecnicoId</td>
+        @if(Model.equipo.DirectorTecnico == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddDirectorTecnico" asp-route-id="@Model.equipo.Id">Asignar Director tecnico</a>
+            </td>            
+        }else {
+                <td>@Model.equipo.DirectorTecnicoId</td>
+        }  
     </tr>
     <tr>
         <th scope="col">Municipio</th>
-        <td>@Model.equipo.MunicipioId</td>
+        @if (Model.equipo.Municipio == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddMunicipio" asp-route-id="@Model.equipo.Id">Asignar Municipio</a>
+            </td>
+        }else{
+                <td>@Model.equipo.MunicipioId</td>
+        }        
     </tr> 
-    <!--<tr>
-        <th scope="col">Jugadores</th>
-        <td>@Model.equipo.Jugador</td>
-    </tr>-->   
-</table>
+    </table>
 <a class="btn btn-primary" asp-page="./Index">Volver</a>
