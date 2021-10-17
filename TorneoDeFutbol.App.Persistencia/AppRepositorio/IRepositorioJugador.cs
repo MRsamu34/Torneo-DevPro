@@ -11,5 +11,7 @@ namespace TorneoDeFutbol.App.Persistencia
         Jugador UpdateJugador(Jugador jugador);
         void DeleteJugador(int idJugador);    
         Jugador GetJugador(int idJugador);
+        Equipo AsignarEquipo(int idJugador , int idEquipo);
+        //IEnumerable<Jugador> GetJugadoresEquipos(string nombre);
     }
 }

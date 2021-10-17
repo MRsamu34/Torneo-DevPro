@@ -25,9 +25,11 @@ namespace TorneoDeFutbol.App.Persistencia
             }
         }
         protected override void OnModelCreating(ModelBuilder builder){
-            builder.Entity<Equipo>().HasIndex(e=>e.DirectorTecnicoId).IsUnique();
-            builder.Entity<Equipo>().HasIndex(e=>e.MunicipioId).IsUnique();
+           builder.Entity<Equipo>().HasIndex(e=>e.DirectorTecnicoId).IsUnique();
+           builder.Entity<Equipo>().HasIndex(e=>e.MunicipioId).IsUnique();
+            
 
-        }
+       }
     }
 }
+
