@@ -48,9 +48,10 @@ namespace TorneoDeFutbol.App.Persistencia
             }
             return directorTecnicoEncontrado;
         }
-        /*IEnumerable<DirectorTecnico> IRepositorioDirectorTecnico.GetDirectoresTecnicosNombre(string nombre){
-            return _appContext.DirectorTecnico
+        IEnumerable<DirectorTecnico> IRepositorioDirectorTecnico.SearchDirectoresTecnicos(string nombre)
+        {
+            return  _appContext.DirectorTecnico
                         .Where(d => d.Nombre.Contains(nombre));
-        }*/
+        }
     }
 }
