@@ -25,10 +25,6 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Jugadores
             jugador = _repoJugador.GetJugador(id);
             equipo = _repoEquipo.GetAllEquipo();
         }
-         public IActionResult OnPost(int idJugador, int idEquipo)
-        {
-            _repoJugador.AsignarEquipo(idJugador, idEquipo);
-            return RedirectToPage("Details", new{id = idJugador});
-        }
+        
     }
 }
