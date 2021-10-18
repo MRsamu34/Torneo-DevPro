@@ -16,12 +16,12 @@ namespace TorneoDeFutbol.App.Dominio
 
         public string Nombre {get; set;}
         [Display(Name = "Director tecnico")]
+        
         public int DirectorTecnicoId {get; set;}
         public DirectorTecnico DirectorTecnico {get; set;}  
         [Display(Name = "Municipio")]
         public int MunicipioId {get; set;}
         public Municipio Municipio {get; set;} 
 
-        public List<Jugador> Jugador {get; set;}
     }
 }
