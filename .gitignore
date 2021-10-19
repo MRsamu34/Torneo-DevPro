@@ -405,3 +405,12 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode
+TorneoDeFutbol.App.Persistencia/Migrations/20211015182859_Inicial.cs
+TorneoDeFutbol.App.Persistencia/Migrations/20211015182859_Inicial.Designer.cs
+TorneoDeFutbol.App.Persistencia/Migrations/20211017075038_Inicial.cs
+TorneoDeFutbol.App.Persistencia/Migrations/20211017075038_Inicial.Designer.cs
+TorneoDeFutbol.App.Persistencia/Migrations/20211018032952_Entidades.cs
+TorneoDeFutbol.App.Persistencia/Migrations/20211018032952_Entidades.Designer.cs
+TorneoDeFutbol.App.Persistencia/Migrations/AppContextModelSnapshot.cs
+TorneoDeFutbol.App.Persistencia/Migrations/20211015182859_Inicial.cs
+TorneoDeFutbol.App.Persistencia/Migrations/20211015182859_Inicial.Designer.cs
