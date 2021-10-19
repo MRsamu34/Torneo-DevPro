@@ -10,7 +10,7 @@ using TorneoDeFutbol.App.Persistencia;
 namespace TorneoDeFutbol.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211017075038_Inicial")]
+    [Migration("20211015182859_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -152,14 +152,9 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int?>("PartidoId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("MunicipioId");
-
-                    b.HasIndex("PartidoId");
 
                     b.ToTable("Estadio");
                 });
@@ -318,13 +313,7 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("MunicipioId");
 
-                    b.HasOne("TorneoDeFutbol.App.Dominio.Partido", "Partido")
-                        .WithMany()
-                        .HasForeignKey("PartidoId");
-
                     b.Navigation("Municipio");
-
-                    b.Navigation("Partido");
                 });
 
             modelBuilder.Entity("TorneoDeFutbol.App.Dominio.Jugador", b =>

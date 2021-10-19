@@ -121,8 +121,7 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Direccion = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    MunicipioId = table.Column<int>(type: "int", nullable: true),
-                    PartidoId = table.Column<int>(type: "int", nullable: true)
+                    MunicipioId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -131,12 +130,6 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                         name: "FK_Estadio_Municipio_MunicipioId",
                         column: x => x.MunicipioId,
                         principalTable: "Municipio",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Estadio_Partido_PartidoId",
-                        column: x => x.PartidoId,
-                        principalTable: "Partido",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -226,11 +219,6 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                 name: "IX_Estadio_MunicipioId",
                 table: "Estadio",
                 column: "MunicipioId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Estadio_PartidoId",
-                table: "Estadio",
-                column: "PartidoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Jugador_EquipoId",

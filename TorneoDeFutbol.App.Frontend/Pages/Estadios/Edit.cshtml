@@ -20,13 +20,17 @@
         <span asp-validation-for="estadio.Direccion" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="estadio.Municipio"></label>
-        <input asp-for="estadio.Municipio" class="form-control">
-    </div>
-
-    <div class="form-group">
-        <label asp-for="estadio.Partido"></label>
-        <input asp-for="estadio.Partido" class="form-control">
+        @if (Model.estadio.Municipio != null)
+        {
+            <label asp-for="estadio.Municipio"></label>
+            <p class="d-inline p-2 bg-dark text-white">@Model.estadio.Municipio.Nombre</p>
+            <a class="btn btn-secondary" asp-page="./AddMunicipio" asp-route-id="@Model.estadio.Id">Editar Municipio</a>
+        }
+        else
+        {
+            <label asp-for="estadio.Municipio"></label>
+            <a class="btn btn-secondary" asp-page="./AddMunicipio" asp-route-id="@Model.estadio.Id">Agregar Municipio</a>
+        }
     </div>
     <button type="submit" class="btn btn-primary">Editar estadio</button>
 </form>
