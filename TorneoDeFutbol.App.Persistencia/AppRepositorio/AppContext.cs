@@ -24,7 +24,7 @@ namespace TorneoDeFutbol.App.Persistencia
                 optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=TorneoDeFutbolData");
             }
         }
-        protected override void OnModelCreating(ModelBuilder builder){
+       protected override void OnModelCreating(ModelBuilder builder){
             builder.Entity<Equipo>().HasIndex(e=>e.DirectorTecnicoId).IsUnique();
             builder.Entity<Equipo>().HasIndex(e=>e.MunicipioId).IsUnique();
 

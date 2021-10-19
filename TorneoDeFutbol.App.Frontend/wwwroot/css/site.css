@@ -73,8 +73,13 @@ body {
 
 .navbarTorneo{
   background: #4797ff;
+  
 }
 
 .navbar-light .navbar-toggler{
   color: transparent;
+}
+/*Es un id para un span crado por jhontana, hecho por Mayda*/
+#style{
+  padding-right: 10px;
 }
