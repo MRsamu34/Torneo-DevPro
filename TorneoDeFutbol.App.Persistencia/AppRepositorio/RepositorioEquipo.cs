@@ -14,12 +14,8 @@ namespace TorneoDeFutbol.App.Persistencia
         {
             var municipioEncontrado = _appContext.Municipio.Find(equipo.MunicipioId);
             var directorTecnicoEcontrado = _appContext.DirectorTecnico.Find(equipo.DirectorTecnicoId);
-            var jugadorEncontrado = _appContext.Jugador.Find(equipo.Jugador.FirstOrDefault().Id);
             equipo.DirectorTecnico = directorTecnicoEcontrado;
             equipo.Municipio = municipioEncontrado;
-            List<Jugador> jugadores = new List<Jugador>();
-            jugadores.Add(jugadorEncontrado);
-            equipo.Jugador = jugadores;
             var equipoAdicionado = _appContext.Equipo.Add(equipo);
             _appContext.SaveChanges();
             return equipoAdicionado.Entity;
@@ -37,7 +33,6 @@ namespace TorneoDeFutbol.App.Persistencia
         public IEnumerable<Equipo> GetAllEquipo()
         {
             var equipos = _appContext.Equipo
-                            .Include(e => e.Jugador)
                             .Include(e => e.Municipio)
                             .Include(e => e.DirectorTecnico);
             
@@ -48,7 +43,7 @@ namespace TorneoDeFutbol.App.Persistencia
         {
             return _appContext.Equipo
                         .Where(e => e.Id == idEquipo)
-                        //.Include(e => e.Jugador)
+                        .Include(e => e.Jugador)
                         .Include(e => e.Municipio)
                         .Include(e => e.DirectorTecnico)
                         .FirstOrDefault();
@@ -62,11 +57,16 @@ namespace TorneoDeFutbol.App.Persistencia
                 equipoEncontrado.Nombre = equipo.Nombre;
                 equipoEncontrado.DirectorTecnico = equipo.DirectorTecnico;
                 equipoEncontrado.Municipio = equipo.Municipio;
-                equipoEncontrado.Jugador = equipo.Jugador;
-                
+                                
                 _appContext.SaveChanges();
             }
             return equipoEncontrado;
+        }
+        
+        IEnumerable<Equipo> IRepositorioEquipo.SearchEquipos(string nombre)
+        {
+            return  _appContext.Equipo
+                        .Where(e => e.Nombre.Contains(nombre));
         }
     }
 }

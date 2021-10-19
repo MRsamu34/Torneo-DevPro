@@ -316,9 +316,11 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
 
             modelBuilder.Entity("TorneoDeFutbol.App.Dominio.Jugador", b =>
                 {
-                    b.HasOne("TorneoDeFutbol.App.Dominio.Equipo", null)
-                        .WithMany("Jugador")
+                    b.HasOne("TorneoDeFutbol.App.Dominio.Equipo", "Equipo")
+                        .WithMany()
                         .HasForeignKey("EquipoId");
+
+                    b.Navigation("Equipo");
                 });
 
             modelBuilder.Entity("TorneoDeFutbol.App.Dominio.MarcadorFinal", b =>
@@ -336,11 +338,6 @@ namespace TorneoDeFutbol.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("JugadorId");
 
-                    b.Navigation("Jugador");
-                });
-
-            modelBuilder.Entity("TorneoDeFutbol.App.Dominio.Equipo", b =>
-                {
                     b.Navigation("Jugador");
                 });
 #pragma warning restore 612, 618

@@ -15,6 +15,6 @@ namespace TorneoDeFutbol.App.Dominio
         public string Numero { get; set; }
         // Posicion en la que juega el jugador
         public String Posicion { get; set; }
-        //public Equipo Equipo {get; set;}
+        public Equipo Equipo {get; set;}
    }
 }
