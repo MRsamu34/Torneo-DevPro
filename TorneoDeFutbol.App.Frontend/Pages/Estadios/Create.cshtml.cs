@@ -13,26 +13,24 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Estadios
     {
         private readonly IRepositorioEstadio _repoEstadio;
         private readonly IRepositorioMunicipio _repoMunicipio;
-        public IEnumerable<Municipio> municipios {get; set;}
         public Estadio estadio {get; set;}
+        public IEnumerable<Municipio> municipios {get; set;}
         public CreateModel(IRepositorioEstadio repoEstadio, IRepositorioMunicipio repoMunicipio)
         {
             _repoEstadio = repoEstadio;
             _repoMunicipio = repoMunicipio;
 
         }
-        public void OnGet(int id)
+        public void OnGet()
         {
             estadio = new Estadio();
             municipios = _repoMunicipio.GetAllMunicipio();
         }
-        public IActionResult OnPost(Estadio estadio, int idMunicipio)
+        public IActionResult OnPost(Estadio estadio)
         {
             if(ModelState.IsValid)
             {
                 _repoEstadio.AddEstadio(estadio);
-                //_repoEstadio.AgregarMunicipio(idMunicipio);
-                Console.WriteLine(idMunicipio);
                 return RedirectToPage("Index");
             }
             else
