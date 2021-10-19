@@ -53,6 +53,12 @@ namespace TorneoDeFutbol.App.Persistencia
             return estadioEncontrado;
         }
 
+        IEnumerable<Estadio> IRepositorioEstadio.SearchEstadios(string nombre)
+        {
+            return  _appContext.Estadio
+                        .Where(e => e.Nombre.Contains(nombre));
+        }
+
         Municipio IRepositorioEstadio.AgregarMunicipio(int idEstadio, int idMunicipio)
         {
             var estadioEncontrado = _appContext.Estadio.FirstOrDefault(e => e.Id == idEstadio);
