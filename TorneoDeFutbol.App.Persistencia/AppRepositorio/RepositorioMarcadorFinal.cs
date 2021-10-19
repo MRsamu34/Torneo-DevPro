@@ -50,5 +50,10 @@ namespace TorneoDeFutbol.App.Persistencia
             }
             return marcadorFinalEncontrado;
         }
+        // IEnumerable<MarcadorFinal> IRepositorioMarcadorFinal.SearchMarcadorFinal(string equipoGanador)
+        // {
+        //     return  _appContext.MarcadorFinal.Where(d => d.EquipoGanador.Contains(equipoGanador));
+        // }
+
     }
 }

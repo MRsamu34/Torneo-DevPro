@@ -1,9 +1,22 @@
 ﻿@page
+@using TorneoDeFutbol.App.Dominio
 @model TorneoDeFutbol.App.Frontend.Pages.MarcadoresFinales.IndexModel
 @{
 }
 <div class="card mb-4 shadow bg-body rounded">
     <div class="card-body text-primary fs-1 ">Marcador final</div>
+</div>
+<div class="card-body">
+    @* <form method="get">
+        <div class="form-group">
+            <label for="b">Buscar</label>
+            <input name="b" id="b" class="form-control" asp-for="@Model.bActual">
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+    </form> *@
+</div>
+<div class="card-body mb-2">
+    <a class="btn btn-primary" asp-page="./Create" >Crear marcador final</a>
 </div>
 
 <div class="card-body">
@@ -14,7 +27,9 @@
             <td>Marcador ganador</td>
             <td>Equipo perdedor</td>
             <td>Marcador perdedor</td>
-            <td>Partido</td></tr>
+            <td>Partido</td>
+            <td>Acciones</td>
+            </tr>
         </thead>
         <tbody>
             @foreach(var marcador in Model.marcadorFinal){
@@ -24,6 +39,10 @@
                     <td>@marcador.EquipoPerdedor</td>
                     <td>@marcador.MarcadorPerdedor</td>
                     <td>@marcador.Partido</td>
+                    <td class="d-flex justify-content-around">
+                     <a class="btn btn-primary" asp-page="./Details" asp-route-id="@marcador.Id">Detalle</a>
+                     <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@marcador.Id">Editar</a>
+                    </td>
                 </tr>
             }
 

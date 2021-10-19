@@ -9,11 +9,11 @@ using TorneoDeFutbol.App.Dominio;
 
 namespace TorneoDeFutbol.App.Frontend.Pages.MarcadoresFinales
 {
-    public class DetailsModel : PageModel
+    public class EditModel : PageModel
     {
         private readonly IRepositorioMarcadorFinal _repoMarcadorFinal;
         public MarcadorFinal marcadorFinal{get; set;}
-        public DetailsModel(IRepositorioMarcadorFinal repoMarcadorFinal){
+        public EditModel(IRepositorioMarcadorFinal repoMarcadorFinal){
             _repoMarcadorFinal = repoMarcadorFinal;
         }
         public IActionResult OnGet(int id)
@@ -29,5 +29,9 @@ namespace TorneoDeFutbol.App.Frontend.Pages.MarcadoresFinales
 
         }
 
+         public IActionResult OnPost(MarcadorFinal marcadorFinal){
+            _repoMarcadorFinal.UpdateMarcadorFinal(marcadorFinal);
+            return RedirectToPage("Index");
+        }
     }
 }

@@ -1,0 +1,60 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.MarcadoresFinales.CreateModel
+@{
+}
+<div class="card">
+    <div class="card-header"><h1>Marcador final</h1></div>
+    <div class="card-body">
+    <form method="post">
+        <div class="form-group mb-2">
+            <label asp-for="marcadorFinal.EquipoGanador"></label>
+            <select name="marcadorFinal.EquipoGanador" id="marcadorFinal.EquipoGanador" class="form-control">
+            @foreach (var equipo in Model.equipos)
+                {
+                    <option value="@equipo.Id">@equipo.Nombre</option>
+                }
+            </select>
+
+            <span asp-validation-for="marcadorFinal.EquipoGanador" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-2">
+            <label asp-for="marcadorFinal.MarcadorGanador"></label>
+            <input asp-for="marcadorFinal.MarcadorGanador" class="form-control">
+            <span asp-validation-for="marcadorFinal.MarcadorGanador" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-2">
+            <label asp-for="marcadorFinal.EquipoPerdedor"></label>
+             <select name="marcadorFinal.EquipoPerdedor" id="marcadorFinal.EquipoPerdedor" class="form-control">
+                @foreach (var equipo in Model.equipos)
+                    {
+                        <option value="@equipo.Id">@equipo.Nombre</option>
+                    }
+                </select>
+            <span asp-validation-for="marcadorFinal.EquipoPerdedor" class="text-danger"></span>
+
+        </div>
+        <div class="form-group mb-2">
+            <label asp-for="marcadorFinal.MarcadorPerdedor"></label>
+            <input asp-for="marcadorFinal.MarcadorPerdedor" class="form-control">
+            <span asp-validation-for="marcadorFinal.MarcadorPerdedor" class="text-danger"></span>
+
+        </div>
+        <div class="form-group mb-2">
+            <label asp-for="marcadorFinal.Partido"></label>
+             <select asp-for="marcadorFinal.Partido" name="marcadorFinal.Partido" id="marcadorFinal.Partido" class="form-control">
+                @foreach (var partido in Model.partido)
+                    {
+                        <option value="@partido.Id">@partido.FechaHora  Equipo local  @partido.Equipo_Local   Equipo visitante   @partido.Equipo_Visitante</option>
+                    }
+                </select>
+            <span asp-validation-for="marcadorFinal.Partido" class="text-danger"></span>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Crear marcador final</button>
+    </form>
+    </div>
+    <div class="card-header">
+        <a asp-page="./Index" class="btn btn-secondary">Volver</a>
+    </div>
+
+</div>

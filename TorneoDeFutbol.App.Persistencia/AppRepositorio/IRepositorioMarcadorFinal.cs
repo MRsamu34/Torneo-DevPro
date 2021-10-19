@@ -11,5 +11,7 @@ namespace TorneoDeFutbol.App.Persistencia
         MarcadorFinal UpdateMarcadorFinal(MarcadorFinal marcadorFinal);
         void DeleteMarcadorFinal(int idMarcadorFinal);    
         MarcadorFinal GetMarcadorFinal(int idMarcadorFinal);
+        // IEnumerable<MarcadorFinal> SearchMarcadorFinal(String nombre);
+
     }
 }

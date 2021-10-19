@@ -7,15 +7,22 @@
     <div class="card-body text-primary fs-1 ">Novedades</div>
 </div>
 
+<div class="card-body mb-2">
+    <a class="btn btn-primary" asp-page="./Create" >Crear novedad</a>
+</div>
+
 <div class="card-body">
     <table class="table table-bordered">
         <thead>
-            <tr><td>Tarjeta amarilla</td>
-            <td>Tarjeta roja</td>
-            <td>Goles</td>
-            <td>Novedad descripción</td>
-            <td>Tiempo</td>
-            <td>Juagdor</td></tr>
+            <tr>
+                <td>Tarjeta amarilla</td>
+                <td>Tarjeta roja</td>
+                <td>Goles</td>
+                <td>Novedad descripción</td>
+                <td>Tiempo</td>
+                <td>Jugador</td>
+                <td>Acciones</td>
+            </tr>
         </thead>
         <tbody>
             @foreach(var novedad in Model.novedad){
@@ -26,6 +33,10 @@
                     <td>@novedad.NombreNovedad</td>
                     <td>@novedad.Minuto</td>
                     <td>@novedad.Jugador</td>
+                    <td class="d-flex justify-content-around">
+                        <a class="btn btn-primary" asp-page="./Details" asp-route-id="@novedad.Id">Detalle</a>
+                        <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@novedad.Id">Editar</a>
+                    </td>
                 </tr>
             }
 

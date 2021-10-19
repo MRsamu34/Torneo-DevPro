@@ -43,7 +43,7 @@ namespace TorneoDeFutbol.App.Persistencia
         {
             return _appContext.Equipo
                         .Where(e => e.Id == idEquipo)
-                        //.Include(e => e.Jugador)
+                        // .Include(e => e.Jugador)
                         .Include(e => e.Municipio)
                         .Include(e => e.DirectorTecnico)
                         .FirstOrDefault();

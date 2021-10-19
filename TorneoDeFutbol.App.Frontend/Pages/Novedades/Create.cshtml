@@ -1,0 +1,47 @@
+﻿@page
+@model TorneoDeFutbol.App.Frontend.Pages.Novedades.CreateModel
+@{
+}
+
+<div class="card">
+    <div class="card-header"><h1>Novedades</h1></div>
+    <div class="card-body">
+        <form method="post">
+            <div class="form-group mb-2">
+                <label asp-for="novedad.YellowCards"></label>
+                <input class="form-control" asp-for="novedad.YellowCards" />
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="novedad.RedCards"></label>
+                <input class="form-control" asp-for="novedad.RedCards" />
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="novedad.goles"></label>
+                <input class="form-control" asp-for="novedad.goles" />
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="novedad.NombreNovedad"></label>
+                <input class="form-control" asp-for="novedad.NombreNovedad" />
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="novedad.Minuto"></label>
+                <input class="form-control" asp-for="novedad.Minuto" />
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="novedad.Jugador"></label>
+                <select asp-for="novedad.Jugador" class="form-control">
+                @foreach (var jugador in Model.jugador)
+                    {
+                        <option value="@jugador.Id">@jugador.Nombre Posición @jugador.Posicion</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear novedad</button>
+        </form>
+        
+    </div>
+    
+     <div class="card-header">
+        <a asp-page="./Index" class="btn btn-secondary">Volver</a>
+    </div>
+</div>

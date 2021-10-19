@@ -2,3 +2,42 @@
 @model TorneoDeFutbol.App.Frontend.Pages.Novedades.DetailsModel
 @{
 }
+
+
+<div class="card">
+    <div class="card-header mb-4"> 
+        <h1 class="mb-4 text-primary">Detalle marcador final</h1>
+    </div>
+    <div class="card-body">
+        <table class="table ">
+            <tr>
+                <th>Tarjeta amarilla</th>
+                <td>@Model.novedad.YellowCards</td>
+            </tr>
+            <tr>
+                <th>Tarjeta roja</th>
+                <td>@Model.novedad.RedCards</td>
+            </tr>
+            <tr>
+                <th>Goles</th>
+                <td>@Model.novedad.goles</td>
+            </tr>      
+            <tr>
+                <th>Novedad</th>
+                <td>@Model.novedad.NombreNovedad</td>
+            </tr> 
+            <tr>
+                <th>Minuto</th>
+                <td>@Model.novedad.Minuto</td>
+            </tr> 
+            <tr>
+                <th>Jugador</th>
+                <td>@Model.novedad.Jugador</td>
+            </tr> 
+        </table>
+        
+    </div>
+    <div class="card-footer bg-transparent">
+        <a class="btn btn-primary" asp-page="./Index">Volver</a>
+    </div>
+</div>

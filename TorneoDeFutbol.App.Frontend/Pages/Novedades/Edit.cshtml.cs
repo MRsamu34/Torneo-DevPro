@@ -7,14 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TorneoDeFutbol.App.Persistencia;
 using TorneoDeFutbol.App.Dominio;
 
-
 namespace TorneoDeFutbol.App.Frontend.Pages.Novedades
 {
-    public class DetailsModel : PageModel
+    public class EditModel : PageModel
     {
         private readonly IRepositorioNovedad _repoNovedad;
-        public Novedad novedad{get; set;}
-        public DetailsModel(IRepositorioNovedad repoNovedad){
+        public Novedad novedad{get;set;}
+
+        public EditModel(IRepositorioNovedad repoNovedad){
             _repoNovedad = repoNovedad;
         }
         public IActionResult OnGet(int id)
@@ -28,6 +28,11 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Novedades
                 return Page();
             }
 
+        }
+       
+        public IActionResult OnPost(Novedad novedad){
+            _repoNovedad.UpdateNovedad(novedad);
+            return RedirectToPage("Index");
         }
     }
 }

@@ -3,11 +3,11 @@
 @{
 }
 <form method="get">
-    <div class="form-group">
+    <div class="form-group mb-2">
         <label for="b">Buscar</label>
         <input name="b" id="b" asp-for="@Model.bActual" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary">Buscar</button>
+    <button type="submit" class="btn btn-primary mb-2">Buscar</button>
 </form>
 
 <div class="card mb-4 shadow bg-body rounded">
@@ -27,7 +27,7 @@
       {
            <tr>
                 <th>@municipio.Nombre</th>
-                 <td>
+                 <td class="d-flex justify-content-around">
                   <a class="btn btn-primary" asp-page="./Details" asp-route-id="@municipio.Id">Detalle</a>
                   <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@municipio.Id">Modificar</a>
                 </td>
