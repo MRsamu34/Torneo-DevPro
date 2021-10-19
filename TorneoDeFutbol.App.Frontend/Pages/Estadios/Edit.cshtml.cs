@@ -12,14 +12,18 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Estadios
     public class EditModel : PageModel
     {
         private readonly IRepositorioEstadio _repoEstadio;
+        private readonly IRepositorioMunicipio _repoMunicipio;
         public Estadio estadio {get; set;}
-        public EditModel(IRepositorioEstadio repoEstadio)
+        public IEnumerable<Municipio> municipios {get; set;}
+        public EditModel(IRepositorioEstadio repoEstadio, IRepositorioMunicipio repoMunicipio)
         {
             _repoEstadio = repoEstadio;
+            _repoMunicipio = repoMunicipio;
         }
         public IActionResult OnGet(int Id)
         {
             estadio = _repoEstadio.GetEstadio(Id);
+            municipios = _repoMunicipio.GetAllMunicipio();
             if (estadio == null)
             {
                 return NotFound();
@@ -33,8 +37,8 @@ namespace TorneoDeFutbol.App.Frontend.Pages.Estadios
         {
             if (ModelState.IsValid)
             {
-            _repoEstadio.UpdateEstadio(estadio);
-            return RedirectToPage("Index");
+                _repoEstadio.UpdateEstadio(estadio);
+                return RedirectToPage("Index");
             }
             else 
             {

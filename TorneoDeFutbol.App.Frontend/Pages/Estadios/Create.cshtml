@@ -15,8 +15,13 @@
         <span asp-validation-for="estadio.Direccion" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="estadio.Municipio"></label>
-        <input asp-for="estadio.Municipio" class="form-control">
+        <label for="idMunicipio">Municipio</label>
+        <select name="idMunicipio" id="idMunicipio" class="form-control">
+            @foreach (var municipio in Model.municipios)
+            {
+                <option value="@municipio.Id">@municipio.Nombre</option>
+            }
+        </select>
     </div>
     <button type="submit" class="btn btn-primary">Crear estadio</button>
 </form>

@@ -9,36 +9,27 @@ using TorneoDeFutbol.App.Persistencia;
 
 namespace TorneoDeFutbol.App.Frontend.Pages.Estadios
 {
-    public class CreateModel : PageModel
+    public class AddMunicipioModel : PageModel
     {
         private readonly IRepositorioEstadio _repoEstadio;
         private readonly IRepositorioMunicipio _repoMunicipio;
+        public Estadio estadio { get; set; }
         public IEnumerable<Municipio> municipios {get; set;}
-        public Estadio estadio {get; set;}
-        public CreateModel(IRepositorioEstadio repoEstadio, IRepositorioMunicipio repoMunicipio)
+        public AddMunicipioModel(IRepositorioEstadio repoEstadio, IRepositorioMunicipio repoMunicipio)
         {
             _repoEstadio = repoEstadio;
             _repoMunicipio = repoMunicipio;
-
         }
         public void OnGet(int id)
         {
-            estadio = new Estadio();
+            estadio = _repoEstadio.GetEstadio(id);
             municipios = _repoMunicipio.GetAllMunicipio();
         }
-        public IActionResult OnPost(Estadio estadio, int idMunicipio)
+        public IActionResult OnPost(int idEstadio, int idMunicipio)
         {
-            if(ModelState.IsValid)
-            {
-                _repoEstadio.AddEstadio(estadio);
-                //_repoEstadio.AgregarMunicipio(idMunicipio);
-                Console.WriteLine(idMunicipio);
-                return RedirectToPage("Index");
-            }
-            else
-            {
-                return Page();
-            }
+            Console.WriteLine(idEstadio + " " + idMunicipio);
+            _repoEstadio.AgregarMunicipio(idEstadio, idMunicipio);
+            return RedirectToPage("Details", new{id = idEstadio});
         }
     }
 }

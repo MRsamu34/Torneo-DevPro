@@ -7,16 +7,17 @@ namespace TorneoDeFutbol.App.Consola
     class Program
     {
         private static IRepositorioMunicipio _repoMunicipio= new RepositorioMunicipio();
+        private static IRepositorioEstadio _repoEstadio = new RepositorioEstadio();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AddMunicipio();
+            //AddMunicipio();
             //BuscarMunicipio();
             //MostrarMunicipio();
             //AddDirectorTecnico();
             //BuscarDirectorTecnico();
             //MostrarDirectoresTecnicos();
-            //AddEstadio();
+            AddEstadio();
             //MostrarEstadio();
 
         }
@@ -92,23 +93,19 @@ namespace TorneoDeFutbol.App.Consola
             _repoEquipo.AddEquipo(equipo);
         }*/
 
-
-
-
-        
         //---------------- ESTADIO ----------- Agrega a la base de datos....
-        // private static void AddEstadio()
-        // {
-        //     var municipio = _repoMunicipio.GetMunicipio(1);
-            
-        //     var estadio = new Estadio()
-        //     {
-        //         Nombre = "Atanasio Girardot",
-        //         Direccion = "Cr 55 Av-Barranquilla",
-        //         //Municipio = municipio
-        //     };
-        //     _repoEstadio.AddEstadio(estadio);
-        // }
+         private static void AddEstadio()
+         {
+             var municipio = _repoMunicipio.GetMunicipio(1);
+             int id = municipio.Id;
+             var estadio = new Estadio()
+             {
+                 Nombre = "Carlos Restrepo",
+                 Direccion = "Cr 58 #32-20",
+                 Municipio = id
+             };
+             _repoEstadio.AddEstadio(estadio);
+         }
         // //Mostrando el estadio
         // private static void MostrarEstadio()
         // {

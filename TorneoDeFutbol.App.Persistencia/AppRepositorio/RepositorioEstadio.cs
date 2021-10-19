@@ -52,5 +52,21 @@ namespace TorneoDeFutbol.App.Persistencia
             }
             return estadioEncontrado;
         }
+
+        Municipio IRepositorioEstadio.AgregarMunicipio(int idEstadio, int idMunicipio)
+        {
+            var estadioEncontrado = _appContext.Estadio.FirstOrDefault(e => e.Id == idEstadio);
+            if (estadioEncontrado != null)
+            {
+                var municipioEncontrado = _appContext.Municipio.FirstOrDefault(m => m.Id == idMunicipio);
+                if (municipioEncontrado != null)
+                {
+                    estadioEncontrado.Municipio = municipioEncontrado;
+                    _appContext.SaveChanges();
+                }    
+                return municipioEncontrado;
+            }
+            return null;
+        }
     }
 }
